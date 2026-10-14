@@ -26,19 +26,16 @@ src/
 │   ├── PatoDomestico.java    # Adaptado via PatoAdapter
 │   ├── PavaoAzul.java        # Adaptado via PavaoAdapter
 │   ├── PatoAdapter.java      # Adapter: Pato → Ave
-│   ├── PavaoAdapter.java     # Adapter: Pavao → Ave
-│   └── Main.java
+│   └── PavaoAdapter.java     # Adapter: Pavao → Ave
 ├── questao2/
 │   ├── CalculadoraDecimal.java   # Interface alvo (target)
 │   ├── CalculadoraBinaria.java   # Classe legada (adaptada)
-│   ├── CalculadoraAdapter.java   # Adapter: binária → decimal
-│   └── Main.java
+│   └── CalculadoraAdapter.java   # Adapter: binária → decimal
 ├── questao3/
 │   ├── LeitorPagamento.java        # Interface alvo (target)
 │   ├── SistemaPagamentoAntigo.java # Sistema legado (adaptado)
 │   ├── PagamentoAdapter.java       # Adapter: centavos → reais
-│   ├── LojaVirtual.java            # Cliente do LeitorPagamento
-│   └── Main.java
+│   └── LojaVirtual.java            # Cliente do LeitorPagamento
 └── questao4/
     ├── Video.java          # Interface compartilhada (Proxy + RealSubject)
     ├── VideoPremium.java   # RealSubject (objeto base)
@@ -118,14 +115,13 @@ Main  ──►  VideoProxy  ──► (se premium) ──►  VideoPremium
 javac -d out src/questao1/*.java src/questao2/*.java src/questao3/*.java src/questao4/*.java
 ```
 
-### Executar cada questão
+### Executar
 
 ```bash
-java -cp out questao1.Main
-java -cp out questao2.Main
-java -cp out questao3.Main
 java -cp out questao4.Main
 ```
+
+> As questões 1 a 3 contêm as classes dos padrões; a demonstração executável está na questão 4.
 
 ---
 
